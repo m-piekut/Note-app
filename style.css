@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+    width: 100vw;
+    position: relative;
+    background-color: rgba(213, 238, 102, 0.699);
+}
+
+nav{
+    padding: 10px 20px;
+    background-color: rgba(182, 241, 45, 0.932);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 40px;
+    text-shadow: 2px 4px 5px currentColor;
+}
+h1 i{
+    color: rgb(36, 150, 170);
+    text-shadow: 2px 4px 5px currentColor;
+}
+    nav button{
+        padding: 3px 5px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none;
+        box-shadow: 0 0  5px black;
+        margin: auto 5px;
+        cursor: pointer;
+}
+.notes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1500px;
+}
+.note{
+    position: relative;
+    margin: 10px;
+    height: 100px;
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 5px 5px 7px  currentColor;
+}
+
+    h3{
+        background: rgba(0, 20, 0, 0.1);
+    }
+    p{
+        padding: 5px;
+    }
+    .close{
+        position: absolute;
+        top: 0px;
+        right: 4px;
+        padding: 2px 3px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+.shopping{
+    background-color: rgba(101, 247, 240, 0.507);
+}
+.work{
+    background-color: rgba(212, 34, 72, 0.473);
+}
+.other{
+    background-color: rgba(119, 117, 117, 0.493);
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    margin-top: 200px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: black 5px 5px 5px;
+    visibility: hidden;
+}
+#select{
+    width: 100%;
+    font-size: 10px;
+}
+#select option{
+    font-size: 10px;
+}
+.popup #new-note{
+    height: 70px;
+}
+.popup button{
+    padding: 2px 5px;
+    margin: 4px;
+    cursor: pointer;
+}
+.error{
+    color: tomato;
+    font-size: 14px;
+    display: none;
+}
+.visable{
+    visibility: visible;
+}
